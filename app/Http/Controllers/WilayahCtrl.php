@@ -18,12 +18,6 @@ class WilayahCtrl extends Controller
     {
     	$kelurahan = Kelurahan::where('kec_id_fk', $req->get('id'))
             ->pluck('nama', 'id');
-    
         return response()->json($kelurahan);
-    }
-
-    public function getWil()
-    {
-    	return Kecamatan::with('kelurahan')->get();
     }
 }

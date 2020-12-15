@@ -16,16 +16,26 @@
 
 @push('js')
 <script>
-$(function () {
-    $('#kecamatan').on('change', function () {
-        axios.post('{{ route('wilayah.store') }}', {id: $(this).val()})
-            .then(function (response) {
-                $('#kelurahan').empty();
+window.addEventListener('DOMContentLoaded', function() {
+    $.ajaxSetup({
+        headers: { 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content') }
+    });
 
-                $.each(response.data, function (id, name) {
-                    $('#kelurahan').append(new Option(name, id))
-                })
-            });
+    $(function () {
+        $('#kecamatan').on('change', function () {
+            $.ajax({
+                url: '{{ route('wilayah.store') }}',
+                method: 'POST',
+                data: {id: $(this).val()},
+                success: function (response) {
+                    $('#kelurahan').empty();
+
+                    $.each(response, function (id, name) {
+                        $('#kelurahan').append(new Option(name, id))
+                    })
+                }
+            })
+        });
     });
 });
 </script>

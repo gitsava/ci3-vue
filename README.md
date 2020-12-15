@@ -1,13 +1,13 @@
 # Belajar Laravel 6
 ## Dibuat dengan Framework
  - (PHP) Laravel 6.* LTS
- - Laravel Collective
-	 ```
-	 composer require laravelcollective/html
-	 ```
  - Laravel UI
 	 ```
 	 composer require laravel/ui:^1.0 --dev
+	 ```
+ - Laravel Collective
+	 ```
+	 composer require laravelcollective/html
 	 ```
  - laravel-dompdf
  	 ```
@@ -27,3 +27,5 @@ php artisan make:model Flight --controller
 php artisan make:model Flight -c
 
 php artisan make:model Flight -mfsc
+
+https://www.lab-informatika.com/membuat-dependent-dropdown-di-laravel

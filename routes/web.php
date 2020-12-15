@@ -11,6 +11,5 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'WilayahCtrl@index')->name('wilayah.index';
+Route::get('/getwil', 'WilayahCtrl@getWil');

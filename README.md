@@ -1,4 +1,20 @@
 # Belajar Laravel 6
+## Dibuat dengan Framework
+ - (PHP) Laravel 6.* LTS
+ - Laravel Collective
+	 ```
+	 composer require laravelcollective/html
+	 ```
+ - Laravel UI
+	 ```
+	 composer require laravel/ui:^1.0 --dev
+	 ```
+ - laravel-dompdf
+ 	 ```
+ 	 composer require barryvdh/laravel-dompdf
+ 	 ```
+ - 
+
 ## Eloquent ORM
 ### Buat Model Factory Control 
 php artisan make:model Flight --factory

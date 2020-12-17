@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', 'WilayahCtrl@index')->name('wilayah.index');
-Route::post('/store', 'WilayahCtrl@store')->name('wilayah.store');
-Route::get('/getwil', 'WilayahCtrl@getWil');
+Route::get('/', function () {
+    return view('welcome');
+});

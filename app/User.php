@@ -1,15 +1,16 @@
 <?php
 
-namespace App\Models;
+namespace App;
 
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 
-class User extends Model
+class User extends Authenticatable
 {
-	use Notifiable;
-	 /**
+    use Notifiable;
+
+    /**
      * The attributes that are mass assignable.
      *
      * @var array
@@ -35,10 +36,4 @@ class User extends Model
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
-
-
-    public function roles()
-    {
-    	return $this->hasMany('App\Models\Role','user_id','id');
-    }
 }

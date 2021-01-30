@@ -5,17 +5,17 @@ class Map extends CI_Controller
 	function __construct()
 	{
 		parent::__construct();
-		$this->load->helper('url');
+		$this->load->helper('url','file');
 		$this->load->library(array('googlemaps','jsmin'));
 		$this->load->model('map_model', '', TRUE);
 		$this->_maps();
+        $this->_init();
 	}
 
 	public function index() 
 	{  
 		$coords = $this->map_model->get_coordinates();
         $subdistrict = $this->map_model->get_subdistrict();
-		/*
         foreach ($coords as $coordinate) {
 
 			if($coordinate->type == "restaurant"){
@@ -31,7 +31,6 @@ class Map extends CI_Controller
             $this->googlemaps->add_marker($marker);
 
         }
-        */
 
         foreach ($subdistrict as $sub) {
         	if($sub->zone == 1) {
@@ -46,7 +45,7 @@ class Map extends CI_Controller
         }
 
         $circle = array(
-            'center' => '',
+            'center' => $center,
             'clickable' => TRUE,
             'radius' => '20',
             'strokeColor' => '0.0',
@@ -78,5 +77,14 @@ class Map extends CI_Controller
 		$config['zoom'] = 'auto';
 		$this->googlemaps->initialize($config);
 	}
+
+    private function _init()
+    {
+        $this->output->set_template('default');
+
+        $this->load->js('assets/themes/default/js/jquery-1.9.1.min.js');
+        $this->load->js('assets/themes/default/hero_files/bootstrap-transition.js');
+        $this->load->js('assets/themes/default/hero_files/bootstrap-collapse.js');
+    }
 
 }

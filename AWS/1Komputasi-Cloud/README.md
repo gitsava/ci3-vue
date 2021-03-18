@@ -36,7 +36,7 @@ Amazon EC2 memberikan kapasitas komputasi yang aman dan dapat Anda ubah-ubah uku
 
 Nah, dengan Amazon EC2, proses tersebut akan jauh lebih mudah. Jangan khawatir! AWS sudah menangani bagian-bagian yang sulit untuk Anda. AWS telah membangun dan mengamankan data center, membeli, menyusun, dan memasang server sehingga siap untuk Anda gunakan.
 
-AWS terus mengoperasikan kapasitas komputasi dalam jumlah besar sehingga Anda dapat menggunakannya kapan pun dan berapa pun sesuai dengan porsi kapasitas yang Anda butuhkan. Anda hanya perlu membuat permintaan untuk EC2 instance sesuai keinginan dan saat itu juga mereka pun tersaji dalam hitungan menit. Di AWS, server virtual disebut sebagai instance.
+AWS terus mengoperasikan kapasitas komputasi dalam jumlah besar sehingga Anda dapat menggunakannya kapan pun dan berapa pun sesuai dengan porsi kapasitas yang Anda butuhkan. Anda hanya perlu membuat permintaan untuk EC2 instance sesuai keinginan dan saat itu juga mereka pun tersaji dalam hitungan menit. Di AWS, `server virtual` disebut sebagai `instance`.
 
 Nah, jika telah selesai menggunakannya, Anda dapat menghentikan atau mengakhiri instance tersebut dengan mudah. Anda tidak perlu lagi khawatir akan terjebak dengan server yang tidak digunakan. Anda hanya harus membayar sesuai dengan apa yang Anda gunakan saja (pay for what you use), bukannya saat instance berhenti atau berakhir.
 

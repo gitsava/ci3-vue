@@ -13,7 +13,8 @@ Penasaran? Yuk kita masuk ke materi selanjutnya!
 
 # Pengenalan ke Amazon Elastic Compute Cloud (Amazon EC2)
 <center><img src="img/ec2.jpg"></center>
-Di modul ini kita akan membahas secara mendalam tentang layanan yang disebut Amazon Elastic Compute Cloud (Amazon EC2).
+
+Di modul ini kita akan membahas secara mendalam tentang layanan yang disebut `Amazon Elastic Compute Cloud (Amazon EC2)`.
 
 Jika Anda ingat skenario kedai kopi kita, pegawai dan pelanggan adalah metafora untuk model client-server. Client mengirimkan permintaan ke server, server melakukan beberapa pekerjaan, dan kemudian mengirimkan tanggapan. Contoh tersebut sangat pas untuk kedai kopi.
 

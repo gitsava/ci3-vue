@@ -1,3 +1,4 @@
+venv
 __pycache__
 ImagesUnknown/*.jpg
 Report/*.csv

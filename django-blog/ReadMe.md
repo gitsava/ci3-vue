@@ -1,3 +1,4 @@
+
 ## Build A Blog With Django
 
 #### [View the Tutorial Video](https://youtu.be/J7UOjUshjyY)

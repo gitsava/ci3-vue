@@ -1,0 +1,63 @@
+{% extends 'blog/base_blog.html' %}
+{% block style %}
+<style type='text/css'>
+  img{
+    max-width: 100%;
+    object-fit: cover;
+  }
+
+  .featured_image{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .post-container{
+      width: 900px;
+      margin: 0 auto;
+      padding-top: 20px;
+      padding-bottom: 20px;
+  }
+
+  .author-pic{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  @media screen and (max-width: 900px){
+    .post-container{
+      width: 95%;
+    }
+}
+</style>
+{% endblock style %}
+{% block content %}
+    <!-- start of post -->
+    <div class="post-container">
+        <img class="featured_img" src="{{ article.image.url }}">
+        <!-- start article details -->
+        <div class="article-info">
+          <div class="article-info-content display-center">
+            <div class="display-center">
+              <img class="author-pic" src="{{ article.author.profile_pic.url }}" alt="">
+              <h6>by {{ article.author }} on {{ article.publish|date:"D M Y" }}</h6>
+            </div>
+            
+            <div class="article-meta">
+              {% for tag in article.tags.all %}
+              <span class="tag"><a href="#">{{ tag.name }}</a></span>
+              {% endfor %}
+              <a class="back-button" href="{% url 'blog:articles' %}">All Articles</a>
+            </div>
+          </div>
+        </div>
+        <!-- end of article details -->
+        <hr>   
+        <h1>{{ article.headline}}</h1>
+        <h4>{{ article.sub_headline}}</h4>
+        <br>
+        <p>{{ article.body|safe }}</p>
+    </div>
+    <!-- end of post -->
+{% endblock content %}

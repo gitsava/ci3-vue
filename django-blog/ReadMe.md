@@ -1,24 +1,26 @@
 
 ## Build A Blog With Django
+- Python 3.6 => latest version
+- Django 3.2
+- django-ckeditor 6.0.0
+- django-js-asset 1.2.2
+- Pillow 8.2.0
 
-#### [View the Tutorial Video](https://youtu.be/J7UOjUshjyY)
-
--> Download [starter files for this project](https://github.com/Academy-Omen/django-blogx/tree/starter)
-
+#### [View the Tutorial Video]()
 -> Create Virtual environment
 ```bash
 # Windows
-py -3 -m venv env
+py -3 -m venv venv
 # Linux and Mac
-python -m venv env
+python -m venv venv
 ```
 
 -> Activate environment
 ```bash
 # Windows
-.\env\Scripts\activate
+.\venv\Scripts\activate
 # Linux and Mac
-source env/bin/activate
+source venv/bin/activate
 ```
 
 -> Install Requirements
@@ -316,4 +318,40 @@ def article(request, article):
 
     return render(request, 'article.html', context)
     
+```
+
+
+
+#### [Run]
+-> Create Virtual environment
+```bash
+# Windows
+py -3 -m venv venv
+# Linux and Mac
+python -m venv venv
+```
+
+-> Activate environment
+```bash
+# Windows
+.\venv\Scripts\activate
+# Linux and Mac
+source venv/bin/activate
+```
+
+-> Install Requirements
+```bash
+pip install -r requirements.txt
+
+```
+
+-> Makemigrations & Migrate
+```
+python manage.py makemigrations
+python manage.py migrate
+```
+
+-> Run
+```
+python manage.py runserver
 ```

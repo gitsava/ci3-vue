@@ -1,0 +1,9 @@
+core/__pycache__
+core/migrations
+blog/__pycache__
+blog/migrations
+
+venv/
+*.db
+
+.vscode/

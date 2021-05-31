@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{% block title %}{% endblock title %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="{% static 'favicon.ico' %}"/>
+    <!-- Boxicon awesome icon -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    {% block style %}{% endblock style %}
+  </head>
+  <body>
+  <!-- navbar -->
+    <nav class = "navbar">
+      <div class = "container">
+        <a href = "{% url 'blog:home' %}" class = "navbar-brand">Blogies.Asep</a>
+        <div class = "navbar-nav">
+          <a href = "{% url 'blog:home' %}">home</a>
+          <a href = "{% url 'blog:articles' %}">articles</a>
+          <a href = "{% url 'blog:about' %}">about</a>
+        </div>
+      </div>
+    </nav>
+  <!-- end of navbar -->
+
+    <!-- content -->
+    {% block content %}{% endblock %}
+    <!-- end content -->
+
+    <!-- footer -->
+    <footer>
+      <div class = "social-links">
+        <a href = "#"><i class='bx bxl-facebook'></i></a>
+        <a href = "#"><i class='bx bxl-twitter'></i></a>
+        <a href = "#"><i class='bx bxl-instagram'></i></a>
+        <a href = "#"><i class='bx bxl-github'></i></a>
+      </div>
+      <span>
+        <div class = "social-links">
+          <a href = "{% url 'admin:index' %}"><i class='bx bx-copyright'></i></a>
+        </div>
+        Blogies.Asep
+      </span>
+    </footer>
+    <!-- end of footer -->
+    
+    
+  </body>
+</html>

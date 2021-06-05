@@ -1,0 +1,6 @@
+Django==1.11.29
+gunicorn==19.10.0
+numpy==1.16.6
+opencv-contrib-python==4.2.0.32
+opencv-python==4.2.0.32
+pytz==2019.3

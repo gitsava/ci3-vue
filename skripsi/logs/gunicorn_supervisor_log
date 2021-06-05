@@ -1,0 +1,79 @@
+Starting skripsi as sava
+[2020-04-06 08:12:17 +0000] [11380] [INFO] Starting gunicorn 19.10.0
+[2020-04-06 08:12:17 +0000] [11380] [INFO] Listening at: http://127.0.0.1:8000 (11380)
+[2020-04-06 08:12:17 +0000] [11380] [INFO] Using worker: sync
+[2020-04-06 08:12:17 +0000] [11386] [INFO] Booting worker with pid: 11386
+/var/www/apps/skripsi/venv/lib/python2.7/site-packages/django/db/models/fields/__init__.py:1451: RuntimeWarning: DateTimeField Log.waktu_masuk received a naive datetime (2020-04-06 08:32:14.850646) while time zone support is active.
+  RuntimeWarning)
+[2020-04-06 08:41:06 +0000] [11380] [INFO] Handling signal: term
+[2020-04-06 08:41:06 +0000] [11386] [INFO] Worker exiting (pid: 11386)
+None
+pg
+None
+label
+(11, 1095.0051759515002)
+[2020-04-06 08:41:06 +0000] [11380] [INFO] Shutting down: Master
+Starting skripsi as sava
+[2020-04-06 08:41:08 +0000] [11774] [INFO] Starting gunicorn 19.10.0
+[2020-04-06 08:41:08 +0000] [11774] [INFO] Listening at: http://127.0.0.1:8000 (11774)
+[2020-04-06 08:41:08 +0000] [11774] [INFO] Using worker: sync
+[2020-04-06 08:41:08 +0000] [11780] [INFO] Booting worker with pid: 11780
+/var/www/apps/skripsi/venv/lib/python2.7/site-packages/django/db/models/fields/__init__.py:1451: RuntimeWarning: DateTimeField Log.waktu_masuk received a naive datetime (2020-04-06 08:45:59.830452) while time zone support is active.
+  RuntimeWarning)
+/var/www/apps/skripsi/venv/lib/python2.7/site-packages/django/db/models/fields/__init__.py:1451: RuntimeWarning: DateTimeField Log.waktu_masuk received a naive datetime (2020-04-06 08:46:10.091031) while time zone support is active.
+  RuntimeWarning)
+/var/www/apps/skripsi/venv/lib/python2.7/site-packages/django/db/models/fields/__init__.py:1451: RuntimeWarning: DateTimeField Log.waktu_masuk received a naive datetime (2020-04-06 08:46:10.106859) while time zone support is active.
+  RuntimeWarning)
+/var/www/apps/skripsi/venv/lib/python2.7/site-packages/django/db/models/fields/__init__.py:1451: RuntimeWarning: DateTimeField Log.waktu_masuk received a naive datetime (2020-04-06 08:46:11.558406) while time zone support is active.
+  RuntimeWarning)
+/var/www/apps/skripsi/venv/lib/python2.7/site-packages/django/db/models/fields/__init__.py:1451: RuntimeWarning: DateTimeField Log.waktu_masuk received a naive datetime (2020-04-06 08:46:11.572626) while time zone support is active.
+  RuntimeWarning)
+[2020-04-06 08:58:42 +0000] [11774] [INFO] Handling signal: term
+[2020-04-06 08:58:42 +0000] [11780] [INFO] Worker exiting (pid: 11780)
+None
+pg
+None
+label
+(1, 435.48753809076965)
+None
+pg
+None
+label
+(1, 435.48753809076965)
+None
+pg
+None
+label
+(1, 426.73422005527055)
+[2020-04-06 08:58:42 +0000] [11774] [INFO] Shutting down: Master
+Starting skripsi as sava
+[2020-04-06 08:58:44 +0000] [12116] [INFO] Starting gunicorn 19.10.0
+[2020-04-06 08:58:44 +0000] [12116] [INFO] Listening at: http://127.0.0.1:8000 (12116)
+[2020-04-06 08:58:44 +0000] [12116] [INFO] Using worker: sync
+[2020-04-06 08:58:44 +0000] [12123] [INFO] Booting worker with pid: 12123
+/var/www/apps/skripsi/venv/lib/python2.7/site-packages/django/db/models/fields/__init__.py:1451: RuntimeWarning: DateTimeField Log.waktu_masuk received a naive datetime (2020-04-06 08:59:37.959726) while time zone support is active.
+  RuntimeWarning)
+[2020-04-06 09:24:28 +0000] [12116] [INFO] Handling signal: term
+[2020-04-06 09:24:28 +0000] [12123] [INFO] Worker exiting (pid: 12123)
+None
+pg
+None
+label
+(1, 375.229949938386)
+[2020-04-06 09:24:28 +0000] [12116] [INFO] Shutting down: Master
+Starting skripsi as sava
+[2020-04-07 10:31:33 +0000] [15761] [INFO] Starting gunicorn 19.10.0
+[2020-04-07 10:31:33 +0000] [15761] [INFO] Listening at: http://127.0.0.1:8000 (15761)
+[2020-04-07 10:31:33 +0000] [15761] [INFO] Using worker: sync
+[2020-04-07 10:31:33 +0000] [15767] [INFO] Booting worker with pid: 15767
+Not Found: /static/plugins/bootstrap/dist/css/bootstrap.min.css
+Not Found: /static/plugins/font-awesome/css/font-awesome.min.css
+Not Found: /static/css/freelancer.min.css
+Not Found: /static/css/main.css
+Not Found: /static/plugins/jquery/dist/jquery.js
+Not Found: /static/plugins/bootstrap/dist/js/bootstrap.min.js
+Not Found: /static/js/jqBootstrapValidation.js
+Not Found: /static/js/jqBootstrapValidation.js
+[2020-04-07 10:31:50 +0000] [15761] [INFO] Handling signal: term
+[2020-04-07 10:31:50 +0000] [15767] [INFO] Worker exiting (pid: 15767)
+[2020-04-07 10:31:50 +0000] [15761] [INFO] Shutting down: Master

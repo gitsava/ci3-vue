@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{% block title %}{% endblock title %}</title>
+    <title>{% block title %}{% endblock title %} | Asep</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="{% static 'favicon.ico' %}"/>
     <!-- Boxicon awesome icon -->
@@ -16,7 +16,7 @@
   <!-- navbar -->
     <nav class = "navbar">
       <div class = "container">
-        <a href = "{% url 'blog:home' %}" class = "navbar-brand">Blogies.Asep</a>
+        <a href = "{% url 'blog:home' %}" class = "navbar-brand">Blogs.Asep</a>
         <div class = "navbar-nav">
           <a href = "{% url 'blog:home' %}">home</a>
           <a href = "{% url 'blog:articles' %}">articles</a>
@@ -42,9 +42,10 @@
         <div class = "social-links">
           <a href = "{% url 'admin:index' %}"><i class='bx bx-copyright'></i></a>
         </div>
-        Blogies.Asep
+        Blogs.Asep
       </span>
     </footer>
     <!-- end of footer -->
   </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </html>

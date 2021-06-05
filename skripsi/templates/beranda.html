@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    {% load static %}
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Simulasi Absensi</title>
+    <link rel="icon" href="{% static 'img/favicon.ico' %}">
+    <link rel="stylesheet" href="{% static 'plugins/bootstrap/dist/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'plugins/font-awesome/css/font-awesome.min.css' %}">
+    <link href="{% static 'css/freelancer.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/main.css' %}" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
+          type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" class="index">
+
+<!-- Navigation -->
+<nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+            </button>
+            <a class="navbar-brand" href="#page-top">Simulasi Absensi</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="page-scroll">
+            <!--        <a href="#page-top"><span class="glyphicon glyphicon-home"></span></a> -->
+                </li>
+                <li class="page-scroll">
+                    <a href="{% url 'pgabsen_index' %}"><span class="glyphicon glyphicon-facetime-video"></span></a>
+                </li>
+            <!--
+                <li class="page-scroll">
+                    {% if not isloggedin %}
+                        <a href="{% url 'login' %}"><span
+                                class="glyphicon glyphicon-log-in"></span></a>
+                    {% else %}
+                        <a href="{% url 'logout' %}"><span
+                                class="glyphicon glyphicon-log-out"></span></a>
+                    {% endif %}
+                </li>
+            -->
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+
+<!-- Header -->
+<header>
+    <div class="container">
+        <div class="row">
+            <a href="{% url 'pgabsen_index' %}" class="star-light">
+                <div class="col-lg-12">
+                    <h1 class="btn btn-primary">Mulai Absensi Pegawai</h1>
+                    <hr class="star-light">
+                </div>
+            </a>
+        </div>
+    </div>
+</header>
+<!-- Footer -->
+<footer class="text-center">
+    <div class="footer-below">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    2020 SIMULASI
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+<div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
+    <a class="btn btn-primary" href="#page-top">
+        <i class="fa fa-chevron-up"></i>
+    </a>
+</div>
+<script src="{% static 'plugins/jquery/dist/jquery.js' %}"></script>
+<script src="{% static 'plugins/bootstrap/dist/js/bootstrap.min.js' %}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+<!-- Contact Form JavaScript -->
+<script src="{% static 'js/jqBootstrapValidation.js' %}"></script>
+</body>
+
+</html>

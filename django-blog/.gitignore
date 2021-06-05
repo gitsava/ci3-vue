@@ -1,7 +1,9 @@
 core/__pycache__
 core/migrations
 blog/__pycache__
-blog/migrations
+blog/migrations/
+quiz/__pycache__
+quiz/migrations/
 
 venv/
 *.db

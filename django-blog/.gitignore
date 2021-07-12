@@ -2,10 +2,11 @@ core/__pycache__
 core/migrations
 blog/__pycache__
 blog/migrations/
-quiz/__pycache__
-quiz/migrations/
+info/__pycache__
+info/migrations/
 
 venv/
 *.db
 
+.idea/
 .vscode/
